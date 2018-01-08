@@ -1,11 +1,13 @@
-var elem = document.getElementsByClassName('num');
-var result = document.getElementsByClassName('result');
-var sum = 0;
-document.getElementById('btn-sum').onclick = function() {
-  for (var i = 0; i < elem.length; i++) {
-    console.log(elem[i].value);
-    sum += +elem[i].value;
+var inputs = document.getElementsByClassName('num'),
+    inputAllSum = document.getElementsByClassName('num-sum'),
+    sum = 0;
 
+document.getElementById('btn-sum').onclick = function() {
+
+  for (var i = 0; i < inputs.length; i++) {
+    sum += +inputs[i].value;
   }
-  result[0].innerHTML = sum;
+
+  inputAllSum[0].value = sum;
+  console.log(inputAllSum);
 };

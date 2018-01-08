@@ -9,5 +9,4 @@ document.getElementById('btn-sum').onclick = function() {
   }
 
   inputAllSum[0].value = sum;
-  console.log(inputAllSum);
 };

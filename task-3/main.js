@@ -4,6 +4,5 @@ var input = document.getElementById('num'),
 
 input.addEventListener('blur', function(e) {
   sum = e.target.value * 2;
-  console.log(sum);
   result[0].innerHTML = sum;
 });
